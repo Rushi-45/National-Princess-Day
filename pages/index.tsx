@@ -81,7 +81,17 @@ export default function Home() {
         )}
         <Confetti trigger={showConfetti} onComplete={handleConfettiComplete} />
 
-        <footer className="px-4 py-8 text-center text-text/60">
+        <a
+          href="https://buymeacoffee.com/rushi45"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium bg-[#9a4c73] hover:bg-[#f04299] text-white transition-all cursor-pointer rounded-full shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
+        >
+          <span>☕</span>
+          <span>Buy me a coffee</span>
+        </a>
+
+        <footer className="px-4 py-8 text-center text-text/60 relative z-50">
           <p className="text-sm">
             National Princess Day —{' '}
             {new Date().toLocaleDateString('en-US', {
@@ -91,6 +101,15 @@ export default function Home() {
             })}
           </p>
           <p className="text-xs mt-2">Made with 💕</p>
+          <a
+            href="https://buymeacoffee.com/rushi45"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-4 px-4 py-2 text-sm font-medium bg-[#9a4c73]/10 hover:bg-[#9a4c73]/20 text-[#9a4c73] hover:text-[#f04299] transition-all cursor-pointer rounded-full border border-[#9a4c73]/20 hover:border-[#f04299]/40"
+          >
+            <span>☕</span>
+            <span>Buy me a coffee</span>
+          </a>
         </footer>
       </main>
 
