@@ -40,7 +40,8 @@ export default function Confetti({ trigger, onComplete }: ConfettiProps) {
         const x = Math.random() * 100;
         const y = -10 - Math.random() * 20;
         const rotation = Math.random() * 360;
-        const color = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+        const color =
+          confettiColors[Math.floor(Math.random() * confettiColors.length)];
 
         return (
           <motion.div
@@ -75,4 +76,3 @@ export default function Confetti({ trigger, onComplete }: ConfettiProps) {
     </div>
   );
 }
-
